@@ -10,8 +10,12 @@ namespace Labrat
     {
         static void Main(string[] args)
         {
-            Lab01.Tehtava1();
-
+            //Lab01.Tehtava1();
+            //Lab02.Tehtava2();
+            //Lab03.Tehtava3();
+            Lab04.Tehtava3();
         }
+       
     }
+
 }
