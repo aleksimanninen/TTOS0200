@@ -8,5 +8,7 @@ namespace JAMK.IT
 {
     class VK01
     {
+
+        static void Main()
     }
 }
