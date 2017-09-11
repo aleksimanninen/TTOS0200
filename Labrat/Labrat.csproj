@@ -55,6 +55,7 @@
     <Compile Include="Lab10.cs" />
     <Compile Include="Lab11.cs" />
     <Compile Include="Lab12.cs" />
+    <Compile Include="Lab13.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

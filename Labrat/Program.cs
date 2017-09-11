@@ -21,7 +21,8 @@ namespace Labrat
             //Lab09.Tehtava9();
             //Lab10.Tehtava10();
             //Lab11.Tehtava11();
-            Lab12.Tehtava12();
+            //Lab12.Tehtava12();
+            Lab13.Tehtava13();
         }
 
     }

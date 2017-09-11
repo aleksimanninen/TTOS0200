@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Aleksi Manninen 11.9.2017
+//Ohjelma joka kysyy käyttäjältä 5 kokonaislukua. Luvut tulee sijoittaa taulukkoon.
+// Ohjelman tulee tulostaa annetut luvut käänteisessä järjestyksessä.
 namespace Labrat
 {
     class Lab12
@@ -11,26 +13,24 @@ namespace Labrat
 
         public static void Tehtava12()
         {
-            Console.WriteLine("Enter a Number");
-            //int numb = int.Parse(Console.ReadLine());
-            int reverse = 0;
-            // declare numbers as an int array of any size
-            int[] numb = new int[5]  // numbers is a 10-element array
-
             
-            while (numb > 0)
+ 
+            int[] num = new int[5]; // alustetaan taulukko 5 luvulle
+
+
+            for (int i = 0; i < 5; i++)    // kysyy 5 lukua
             {
-                int rem = numb % 10;
-                reverse = (reverse * 10) + rem;
-                numb = numb / 10;
 
+                Console.WriteLine("Anna luku");
+                num[i] = int.Parse(System.Console.ReadLine());
             }
+                for (int b = 4; b > -1; b--)                //b-- kääntää jonon
+                {
+                    Console.Write( " " + num[b] + " ");
+                }
 
-            
-            Console.WriteLine("Reverse number={0}", reverse);
             Console.ReadLine();
         }
     }
 }
-
 
