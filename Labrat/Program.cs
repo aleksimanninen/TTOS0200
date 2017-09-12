@@ -10,19 +10,22 @@ namespace Labrat
     {
         static void Main(string[] args)
         {
-            //Lab01.Tehtava1();
-            //Lab02.Tehtava2();
-            //Lab03.Tehtava3();
-            //Lab04.Tehtava4();
-            //Lab05.Tehtava5();
-            //Lab06.Tehtava6();
-            //Lab07.Tehtava7();
-            //Lab08.Tehtava8();
-            //Lab09.Tehtava9();
-            //Lab10.Tehtava10();
-            //Lab11.Tehtava11();
-            //Lab12.Tehtava12();
-            Lab13.Tehtava13();
+            Lab01.Tehtava1();
+            //Lab01.Tehtava2();
+            //Lab01.Tehtava3();
+            //Lab01.Tehtava4();
+            //Lab01.Tehtava5();
+            //Lab01.Tehtava6();
+            //Lab01.Tehtava7();
+            //Lab01.Tehtava8();
+            //Lab01.Tehtava9();
+            //Lab01.Tehtava10();
+            //Lab01.Tehtava11();
+            //Lab01.Tehtava12();
+            //Lab01.Tehtava13();
+            //Lab01.Tehtava16();
+            //Lab01.Tehtava18();
+            //Lab01.Tehtava20();
         }
 
     }
