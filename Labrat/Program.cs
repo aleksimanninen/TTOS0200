@@ -10,7 +10,7 @@ namespace Labrat
     {
         static void Main(string[] args)
         {
-            Lab01.Tehtava1();
+            //Lab01.Tehtava1();
             //Lab01.Tehtava2();
             //Lab01.Tehtava3();
             //Lab01.Tehtava4();
@@ -26,7 +26,17 @@ namespace Labrat
             //Lab01.Tehtava16();
             //Lab01.Tehtava18();
             //Lab01.Tehtava20();
+            //Kiuas.TestaaKiuas();
+            //Pesukone.TestaaPesukone();
+            //Tv.TestaaTv();
+            Vehicle.Testaavehicle();
         }
+
+
+       
+
+
+
 
     }
 
