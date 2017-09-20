@@ -274,7 +274,7 @@ namespace Labrat
             {
                 int luku;
                 int sum = 0;
-                while (true)
+                while (true)  //while (luku !=0);  Huomio!!!
                 {
                     Console.Write("Anna Luku: ");
                     luku = int.Parse(System.Console.ReadLine());
