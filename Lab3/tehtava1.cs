@@ -6,27 +6,38 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
-      public static class Luku
+    public static class Luku
     {
-       //static bool number { get; set; }
-       //static bool date { get; set; }
-
-     public static bool Onkoluku(string syote)
+        public static bool OnkoLuku(string syote)
         {
-            if (syote == "testi")
+            if (syote.All(char.IsDigit) || syote.ToLower().Contains(','))
             {
-                Console.WriteLine("TOimiiiii");
+
+                Console.WriteLine("Syöte on luku");
                 return true;
             }
             else
             {
+                Console.WriteLine("Syöte ei ole luku");
                 return false;
             }
         }
-     public static bool OnkoPvm(string syote)
-        {
-            return false;
-        }
 
+        public static bool OnkoPvm(string syote)
+        {
+            string[] format = new string[] { "dd.MM.yyyy" };
+            DateTime dateTime;
+
+            if (DateTime.TryParseExact(syote, format, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.NoCurrentDateDefault, out dateTime))
+            {
+                Console.WriteLine("On päivämäärä");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Ei ole päivämäärä");
+                return false;
+            }
+        }
     }
 }
