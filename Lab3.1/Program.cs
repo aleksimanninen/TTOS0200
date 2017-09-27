@@ -18,7 +18,7 @@ namespace Lab3._3
 
             while (true)
             {
-                Console.WriteLine("Anna kerros(1-6)>");
+                Console.WriteLine("Anna kerros(1-5)>");
                 hissi.Kerros = int.Parse(Console.ReadLine());
                 Console.WriteLine("Hissi on nyt kerroksessa> " + hissi.kerros);
             }

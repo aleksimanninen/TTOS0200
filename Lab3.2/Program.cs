@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +8,12 @@ namespace Lab3._2
 {
   
     
-        class Program
+       class Program
         {
             static void Main(string[] args)
             {
-                AnnaVolume();
+               AnnaVolume();
+            
             }
             static void AnnaVolume()
             {
@@ -22,9 +23,9 @@ namespace Lab3._2
                 {
                     Console.WriteLine("Anna volume(0-100)>");
                     vahvistin.Volume = int.Parse(Console.ReadLine());
-                    Console.WriteLine("Volume on nyt> " + vahvistin.volume);
+                    Console.WriteLine("Volume on nyt> " + vahvistin.Volume);
                 }
             }
         }
   
-}
+}*/

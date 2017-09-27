@@ -12,8 +12,8 @@ namespace Lab3._2
         private readonly int Maxvolume = 100;
         private readonly int Minvolume = 0;
 
-        public int volume;
-        public int Volume
+        private int volume; // jos public näkyy olion ulkopuolelle
+        public int Volume // muuttuja sekä property eli ominaisuus koska get set
         {
             get
             {
@@ -35,4 +35,18 @@ namespace Lab3._2
             }
         }
     }
+
+        class TestaaVahvari         //kapselointia alempana!!
+        {
+        static void Main(string[] args)
+          {
+            Vahvari sony = new Vahvari();  
+            sony.Volume = 50;
+            Console.WriteLine(sony.Volume);
+            sony.Volume = 101;
+            Console.WriteLine(sony.Volume);
+          }
+
+        }
+
 }
