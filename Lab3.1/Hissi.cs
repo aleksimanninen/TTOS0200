@@ -9,7 +9,7 @@ namespace Lab3._3
     //Aleksi Manninen 26.9.2017
     class Hissi
     {
-        private readonly int Maxkerros = 6;
+        private readonly int Maxkerros = 5;
         private readonly int Minkerros = 1;
 
         public int kerros;
@@ -24,7 +24,7 @@ namespace Lab3._3
                 if (value <= Maxkerros && value >= Minkerros) kerros = value;
                 else
                 {
-                    Console.WriteLine("Kerros ei voi olla yli kuusi tai alle yksi.");
+                    Console.WriteLine("Kerros ei voi olla yli viisi tai alle yksi.");
                     kerros = Kerros;
                 }
             }
