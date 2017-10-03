@@ -21,7 +21,7 @@ namespace Lab4
 
         }
 
-        // constructor takes person firstname and lastname as a parameter
+        
         public Employee(string name)
         {
             name = Name;
@@ -30,7 +30,7 @@ namespace Lab4
 
         public override string ToString()
         {
-            return "Nimi: " + Name + " Ammatti: " + Profession + " Palkka:  " + Salary ;
+            return "Nimi: " + Name + " Ammatti: " + Profession + " Palkka: " + Salary ;
         }
     }
 }
