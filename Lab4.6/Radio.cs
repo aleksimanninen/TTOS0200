@@ -62,10 +62,10 @@ namespace Lab04T6
             {
                 return volume;
             }
-            set
-            {
+            //set
+            //{
 
-            }
+            //}
         }
         public double Taajuus
         {
@@ -73,10 +73,10 @@ namespace Lab04T6
             {
                 return taajuus;
             }
-            set
-            {
+            //set
+            //{
 
-            }
+            //}
         }
 
 
