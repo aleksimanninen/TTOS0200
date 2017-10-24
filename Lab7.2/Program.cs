@@ -17,7 +17,7 @@ namespace Lab7._2
             Rhcp.Biisit.Add(new Biisi("Can`t Stop", "2:55"));
             Rhcp.Biisit.Add(new Biisi("Under The Brigde", "2:55"));
             Rhcp.Biisit.Add(new Biisi("Otherside", "2:55"));
-            Rhcp.Biisit.Add(new Biisi("En muistanu enempää", "3:45"));
+            
 
             Console.WriteLine(Rhcp.ToString());
         }
