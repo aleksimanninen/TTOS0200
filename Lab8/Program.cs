@@ -40,7 +40,7 @@ namespace Lab8
             }
             catch(FileNotFoundException ex)
             {
-                Console.WriteLine("Tiedostoa ei löydy!"); // yleensä yksi exception riittää!
+                Console.WriteLine("Tiedostoa ei löytynyt"); // yleensä yksi exception riittää!
             }
 
             catch (Exception ex)
