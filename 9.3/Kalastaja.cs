@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _9._3
+namespace Lab9._3
 {
     class Kalastaja
     {
