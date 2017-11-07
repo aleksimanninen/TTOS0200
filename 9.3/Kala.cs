@@ -12,11 +12,11 @@ namespace Lab9._3
     {
         string Laji { get; set; }
         int Pituus { get; set; }
-        public float Paino { get; set; }
+         public double Paino { get; set; }
         string Paikka { get; set; }
 
 
-        public Kala(string laji, int pituus, float paino, string paikka)
+        public Kala(string laji, int pituus, double paino, string paikka)
         {
             Laji = laji;
             Pituus = pituus;
