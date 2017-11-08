@@ -1,0 +1,26 @@
+﻿<Window x:Class="Lab10._2WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab10._2WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ComboBox x:Name="Valikko1" Text="" HorizontalAlignment="Left" Margin="34,105,0,0" VerticalAlignment="Top" Width="113" SelectionChanged="ComboBox_SelectionChanged">
+            <ListBoxItem x:Name="USD1" Content="Yhdysvallat USD"/>
+            <ListBoxItem x:Name="EUR1" Content="Suomi Eur"/>
+        </ComboBox>
+        <TextBox x:Name="TxtBox1" HorizontalAlignment="Left" Height="23" Margin="147,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" TextChanged="TxtBox1_TextChanged"/>
+        <TextBlock x:Name="TxtBlock1" HorizontalAlignment="Left" Margin="98,133,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="65"/>
+        <ComboBox x:Name="Valikko2" HorizontalAlignment="Left" Margin="310,105,0,0" VerticalAlignment="Top" Width="69" SelectionChanged="Valikko2_SelectionChanged">
+            <ListBoxItem x:Name="EUR2" Content="Suomi Eur"/>
+            <ListBoxItem x:Name="USD2" Content="Yhdysvallat USD"/>
+        </ComboBox>
+        <TextBox x:Name="TxtBox2" HorizontalAlignment="Left" Height="23" Margin="379,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <TextBlock x:Name="TextBlock2" HorizontalAlignment="Left" Margin="321,132,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.022,-0.088"/>
+        <Label Content="Ostan" HorizontalAlignment="Left" Margin="34,79,0,0" VerticalAlignment="Top"/>
+        <Label Content="Maksan" HorizontalAlignment="Left" Margin="310,79,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
