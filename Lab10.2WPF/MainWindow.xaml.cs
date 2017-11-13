@@ -25,25 +25,27 @@ namespace Lab10._2WPF
             InitializeComponent();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        double num1;
+        double num2;
+        private void Osto_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (osto.Text == null)
+            {
+                maksu.Text = 0.ToString();
+            }
+            else
+            {
+                num1 = double.Parse(osto.Text);
+                num2 = num1 * 0.8997;
+                maksu.Text = num2.ToString("0.00");
+            }
+        }
+
+        private void Maksu_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
-        double value1 = 0;
-        double value2 = 0;
-        private void TxtBox1_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
-            value1 = double.Parse(TxtBox1.Text) * 0.8997;
-            TxtBox2.Text = value1.ToString();
 
-        }
-
-        private void Valikko2_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            ListBoxItem li = (ListBoxItem)Valikko2.SelectedItem;
-            value2 = double.Parse(TxtBox2.Text);
-            TxtBox1.Text = value2.ToString();
-        }
     }
 }
+

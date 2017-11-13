@@ -7,20 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <ComboBox x:Name="Valikko1" Text="" HorizontalAlignment="Left" Margin="34,105,0,0" VerticalAlignment="Top" Width="113" SelectionChanged="ComboBox_SelectionChanged">
-            <ListBoxItem x:Name="USD1" Content="Yhdysvallat USD"/>
-            <ListBoxItem x:Name="EUR1" Content="Suomi Eur"/>
+        <ComboBox x:Name="Valuutanvalinta" HorizontalAlignment="Left" Margin="21,101,0,0" VerticalAlignment="Top" Width="142" Text="Valitse valuutta">
+            <ListBoxItem Content="Yhdysvallat USD"/>
         </ComboBox>
-        <TextBox x:Name="TxtBox1" HorizontalAlignment="Left" Height="23" Margin="147,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" TextChanged="TxtBox1_TextChanged"/>
-        <TextBlock x:Name="TxtBlock1" HorizontalAlignment="Left" Margin="98,133,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="65"/>
-        <ComboBox x:Name="Valikko2" HorizontalAlignment="Left" Margin="310,105,0,0" VerticalAlignment="Top" Width="69" SelectionChanged="Valikko2_SelectionChanged">
-            <ListBoxItem x:Name="EUR2" Content="Suomi Eur"/>
-            <ListBoxItem x:Name="USD2" Content="Yhdysvallat USD"/>
+        <TextBox x:Name="osto" HorizontalAlignment="Left" Height="22" Margin="163,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0.147,-0.071" TextChanged="Osto_TextChanged"/>
+        <TextBlock x:Name="kurssi1" HorizontalAlignment="Left" Margin="74,123,0,0" TextWrapping="Wrap" Text="myyntikurssi: 0.8997" VerticalAlignment="Top" RenderTransformOrigin="-0.62,-1.22" Width="84" FontSize="9"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,85,0,0" TextWrapping="Wrap" Text="Ostan" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ComboBox x:Name="Valuutanvalinta_Copy" HorizontalAlignment="Left" Margin="250,101,0,0" VerticalAlignment="Top" Width="142" Text="Valitse valuutta">
+            <ListBoxItem Content="Suomi EUR"/>
         </ComboBox>
-        <TextBox x:Name="TxtBox2" HorizontalAlignment="Left" Height="23" Margin="379,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
-        <TextBlock x:Name="TextBlock2" HorizontalAlignment="Left" Margin="321,132,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.022,-0.088"/>
-        <Label Content="Ostan" HorizontalAlignment="Left" Margin="34,79,0,0" VerticalAlignment="Top"/>
-        <Label Content="Maksan" HorizontalAlignment="Left" Margin="310,79,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="maksu" HorizontalAlignment="Left" Height="22" Margin="392,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0.147,-0.071" TextChanged="Maksu_TextChanged"/>
+        <TextBlock x:Name="kurssi1_Copy" HorizontalAlignment="Left" Margin="250,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.62,-1.22" Width="137" FontSize="9"><Run FontWeight="Bold" Text="100 EUR "/><Run Text="Vastaa  "/><Run FontWeight="Bold" Text="111,15 USD"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="250,85,0,0" TextWrapping="Wrap" Text="Maksan" VerticalAlignment="Top" FontWeight="Bold"/>
+
 
     </Grid>
 </Window>
