@@ -15,37 +15,47 @@ using System.Windows.Shapes;
 
 namespace Lab10._2WPF
 {
+
+  
+
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private void TxtOstan_TextChanged(object sender, TextChangedEventArgs e)
         {
-            InitializeComponent();
-        }
-
-        double num1;
-        double num2;
-        private void Osto_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (osto.Text == null)
+            try
             {
-                maksu.Text = 0.ToString();
+                ListBoxItem li = (ListBoxItem)Valuutta.SelectedItem;
+                string syöte = li.Content.ToString();
+                if (syöte == "EUR")
+                {
+                    double num1, num2;
+                    num1 = double.Parse(TxtOsto.Text);
+                    num2 = (num1 / 0.8997);
+                    TxtMyy.Text = num2.ToString("0.00");
+                }
+                else
+                {
+                    double num1, num2;
+                    num1 = double.Parse(TxtOsto.Text);
+                    num2 = (num1 * 0.8997);
+                    TxtMyy.Text = num2.ToString("0.00");
+                }
             }
-            else
+            catch (Exception)
             {
-                num1 = double.Parse(osto.Text);
-                num2 = num1 * 0.8997;
-                maksu.Text = num2.ToString("0.00");
+                TxtMyy.Text = "Syötä Luku";
             }
         }
 
-        private void Maksu_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
+        
     }
+        
+
+
+    
 }
 

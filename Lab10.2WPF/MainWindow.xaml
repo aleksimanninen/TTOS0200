@@ -7,19 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <ComboBox x:Name="Valuutanvalinta" HorizontalAlignment="Left" Margin="21,101,0,0" VerticalAlignment="Top" Width="142" Text="Valitse valuutta">
-            <ListBoxItem Content="Yhdysvallat USD"/>
+        <TextBox x:Name="TxtOsto" HorizontalAlignment="Left" Height="23" Margin="144,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99" TextChanged="TxtOstan_TextChanged"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="72,135,0,0" TextWrapping="Wrap" Text="Ostan" VerticalAlignment="Top" Width="76" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="281,134,0,0" TextWrapping="Wrap" Text="Maksan" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ComboBox x:Name="Valuutta" HorizontalAlignment="Left" Margin="73,156,0,0" VerticalAlignment="Top" Width="66" SelectedIndex="0" Foreground="Black" Background="#FFF9EDED" FontWeight="Bold" FontStyle="Italic">
+            <ListBoxItem Content="USD"/>
+            <ListBoxItem Content="EUR"/>
         </ComboBox>
-        <TextBox x:Name="osto" HorizontalAlignment="Left" Height="22" Margin="163,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0.147,-0.071" TextChanged="Osto_TextChanged"/>
-        <TextBlock x:Name="kurssi1" HorizontalAlignment="Left" Margin="74,123,0,0" TextWrapping="Wrap" Text="myyntikurssi: 0.8997" VerticalAlignment="Top" RenderTransformOrigin="-0.62,-1.22" Width="84" FontSize="9"/>
-        <TextBlock HorizontalAlignment="Left" Margin="21,85,0,0" TextWrapping="Wrap" Text="Ostan" VerticalAlignment="Top" FontWeight="Bold"/>
-        <ComboBox x:Name="Valuutanvalinta_Copy" HorizontalAlignment="Left" Margin="250,101,0,0" VerticalAlignment="Top" Width="142" Text="Valitse valuutta">
-            <ListBoxItem Content="Suomi EUR"/>
-        </ComboBox>
-        <TextBox x:Name="maksu" HorizontalAlignment="Left" Height="22" Margin="392,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0.147,-0.071" TextChanged="Maksu_TextChanged"/>
-        <TextBlock x:Name="kurssi1_Copy" HorizontalAlignment="Left" Margin="250,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.62,-1.22" Width="137" FontSize="9"><Run FontWeight="Bold" Text="100 EUR "/><Run Text="Vastaa  "/><Run FontWeight="Bold" Text="111,15 USD"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="250,85,0,0" TextWrapping="Wrap" Text="Maksan" VerticalAlignment="Top" FontWeight="Bold"/>
-
+        <TextBox x:Name="TxtMyy" HorizontalAlignment="Left" Height="23" Margin="281,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="72,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25"><Run Text="Myyntikurssi: 0,8997"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="281,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27"><Run Text="100 EUR vastaa 111,15 USD"/><LineBreak/><Run/></TextBlock>
+        
 
     </Grid>
 </Window>

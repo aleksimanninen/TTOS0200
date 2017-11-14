@@ -39,11 +39,11 @@ namespace Lab10._3WPF
 
             //Ikkunan piirto
 
-            Ulompi.Height = (double.Parse(Korkeus.Text) / 3000) * 260;
+            Ulompi.Height = (double.Parse(Korkeus.Text) / 3000) *260;
             Ulompi.Width = (double.Parse(Leveys.Text) / 3000) * 260;
 
-            Sisempi.Height = ((double.Parse(Korkeus.Text) - (2 * (double.Parse(Karmipuu.Text) + 55))) / 3000) * 260;
-            Sisempi.Width = ((double.Parse(Leveys.Text) - (2 * (double.Parse(Karmipuu.Text) + 55))) / 3000) * 260;
+            Sisempi.Height = ((double.Parse(Korkeus.Text) - (2 * (double.Parse(Karmipuu.Text) ))) / 3000) * 260;
+            Sisempi.Width = ((double.Parse(Leveys.Text) - (2 * (double.Parse(Karmipuu.Text) ))) / 3000) * 260;
         }
 
         private void Leveys_TextChanged(object sender, TextChangedEventArgs e)

@@ -13,5 +13,6 @@ namespace Lab10._2WPF
     /// </summary>
     public partial class App : Application
     {
+
     }
 }
